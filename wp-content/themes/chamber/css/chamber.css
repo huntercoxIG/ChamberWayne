@@ -11,7 +11,9 @@ Colors
 body {
 	font-family: open-sans, sans-serif;
 }
-
+.container {
+	overflow: hidden;
+}
 
 /* Header/Navbar */
 .navbar-default {
@@ -81,12 +83,78 @@ body {
 	bottom: 0px;
 	font-size: 17px;
 }
-
-/* Sponsors */
-section.sponsors {
-
+/*
+Colors
+-Orange: #f9891a;
+-Gray: #939598;
+-Red: #b71922;
+-Teal: #00babf;
+-Beige: #faf8f3;
+-Gold: #c4b02f;
+-DarkGray: #6d6e71;
+*/
+/* Featured News */
+section.news {
+	background-color: #faf8f3;
+	width: 100%;
+	padding: 50px 0px;
+}
+section.news span {
+	height: 150px;
+	min-height: 150px;
+	width: 100%;
+	overflow: hidden;
+}
+section.news span img {
+	height: 100%;
+	max-height: 150px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+section.news h4 {
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-bottom: 5px;
+}
+section.news strong {
+	display: block;
+	padding-bottom: 15px;
+	font-size: 15px;
+}
+section.news p {
+	color: #6d6e71;
+}
+section.news a {
+	color: #6d6e71;
+	font-weight: 600;
+	font-size: 15px;
+}
+section.news .red1 {
+	color: #b71922;
+}
+section.news .blue2 {
+	color: #00babf;
+}
+section.news .gold3 {
+	color: #c4b02f;
+}
+section.news .orange4 {
+	color: #f9891a;
 }
 
+
+/* Sponsors */
+section.sponsors h3 {
+	text-transform: uppercase;
+	font-size: 28px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	color: #6d6e71;
+}
+section.sponsors .col-sm-4 {
+	text-align: center;
+	padding: 40px 0px;
+}
 /* Theme - "Join,Discover,Connect" */
 section.theme {
 	padding: 40px 0px 20px 0px;
