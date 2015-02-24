@@ -1,20 +1,35 @@
 <?php get_template_part('includes/header'); ?>
+<section class="hero">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="advancing">
+				
+			</div>
+		</div>
+	</div>
+</section>
 
 <section class="theme">
 			<div class="row">
 				<div class="col-xs-8 col-xs-offset-2">
 					<div class="row">
-						<div class="col-xs-4">
-							<img src="/wp-content/uploads/2015/02/join.png" alt="">
-							<p class="join">Join</p>
+						<div class="col-xs-4 join">
+							<a href="#">
+								<img src="/wp-content/uploads/2015/02/join.png" alt="">
+								<p class="join">Join</p>
+							</a>
 						</div>
-						<div class="col-xs-4">
-							<img src="/wp-content/uploads/2015/02/discover.png" alt="">
-							<p class="discover">Discover</p>
+						<div class="col-xs-4 discover">
+							<a href="#">
+								<img src="/wp-content/uploads/2015/02/discover.png" alt="">
+								<p class="discover">Discover</p>
+							</a>
 						</div>
-						<div class="col-xs-4">
-							<img src="/wp-content/uploads/2015/02/bubble.png" alt="">
-							<p class="connect">Connect</p>
+						<div class="col-xs-4 connect">
+							<a href="#">
+								<img src="/wp-content/uploads/2015/02/bubble.png" alt="">
+								<p class="connect">Connect</p>
+							</a>
 						</div>
 					</div>
 				</div>
@@ -62,34 +77,28 @@
 				<span>
 					<img src="/wp-content/uploads/2015/02/events4.png" alt="">
 				</span>
-				<strong>Lorem ipsum dolor sit amet, consectetur. span</strong>
-				<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem nulla, deserunt vitae, illum, laborum expedita accusamus perferendis nisi natus quidem dolorum enim quam optio in?
-				</p>
-				<a href="#">View post</a>
+				<ul>
+					<li>
+						<img src="/wp-content/uploads/2015/02/circle.png" alt="">
+						<p><a href="">Lorem ipsum dolor sit amet.</a></p>
+					</li>
+					<li>
+						<img src="/wp-content/uploads/2015/02/circle.png" alt="">
+						<p><a href="">Lorem ipsum dolor sit amet.</a></p>
+					</li>
+					<li>
+						<img src="/wp-content/uploads/2015/02/circle.png" alt="">
+						<p><a href="">Lorem ipsum dolor sit amet.</a></p>
+					</li>
+					<li>
+						<a href="#">View post</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </section><!-- /section.news -->
-		
-<section class="sponsors">
-	<div class="container">
-	
-		<h3>Sponsors</h3>
-		<div class="row">
-			<div class="col-sm-4">
-				<img src="/wp-content/uploads/2015/02/firstbank.png" alt="First Bank Richmond">	
-			</div>
-			<div class="col-sm-4">
-				<img src="/wp-content/uploads/2015/02/richmondbaking.png" alt="Richmond Baking">
-			</div>
-			<div class="col-sm-4">
-				<img src="/wp-content/uploads/2015/02/westend.png" alt="West End S.B.">
-			</div>
-		</div><!-- /.row -->
-		
-	</div> <!-- /.container -->
-</section><!-- /section.sponsors -->
+
 	
 
 <?php get_template_part('includes/footer'); ?>

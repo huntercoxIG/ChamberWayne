@@ -1,3 +1,21 @@
+<section class="sponsors">
+	<div class="container">
+	
+		<h3>Sponsors</h3>
+		<div class="row">
+			<div class="col-sm-4">
+				<img src="/wp-content/uploads/2015/02/firstbank.png" alt="First Bank Richmond">	
+			</div>
+			<div class="col-sm-4">
+				<img src="/wp-content/uploads/2015/02/richmondbaking.png" alt="Richmond Baking">
+			</div>
+			<div class="col-sm-4">
+				<img src="/wp-content/uploads/2015/02/westend.png" alt="West End S.B.">
+			</div>
+		</div><!-- /.row -->
+		
+	</div> <!-- /.container -->
+</section><!-- /section.sponsors -->
 <footer class="container site-footer">
 	<div class="foot">
 		<div class="row">
