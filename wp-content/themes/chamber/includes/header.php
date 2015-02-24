@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
   	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php wp_head(); ?>
+	<script src="http://use.edgefonts.net/open-sans:n7,i7,n8,i8,i4,n3,i3,n4,n6,i6:all.js"></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -25,9 +26,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+      <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><img src="/wp-content/uploads/2015/02/chamberlogo.png" alt="Wayne County Chamber of Commerce Logo"/></a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
+     	<div class="top-nav">
+     		<ul class="list-inline">
+     			<li class="social"><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+     			<li class="social"><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+     			<li class="social"><a href="#"><i class="fa fa-youtube-square"></i></a></li>
+     			<li class="top-link"><a href="#">Join</a></li>
+     			<li class="top-link"><a href="#">Members</a></li>
+     			<li class="top-link-alt"><a href="#"><i class="fa fa-phone"></i>(765) 962-1511</a></li>
+     			<li class="search">
+     				<?php get_search_form(); ?>
+     			</li>
+     		</ul>
+     	</div>
       <?php				
             $args = array(
               'theme_location' 	=> 'navbar-left',
@@ -39,7 +53,6 @@
             );
             wp_nav_menu($args);
             
-            get_template_part('includes/navbar-search');
             
             $args = array(
               'theme_location' 	=> 'navbar-right',
@@ -51,6 +64,7 @@
             );
             wp_nav_menu($args);
         ?>
+        
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>
