@@ -14,6 +14,23 @@
 		
 		// You can put your own code in here
 
+		// For Header collapse on scroll past 98px on browser
+			$(window).scroll(function() {
+    		var scrollPos = $(window).scrollTop();
+
+					if(scrollPos  > 1) {
+						if (! $(".navbar-default").hasClass("scrolled")) {
+							$(".navbar-default").addClass("scrolled");
+						}
+					} else {
+						if ($(".navbar-default").hasClass("scrolled")) {
+							$(".navbar-default").removeClass("scrolled");
+						}
+					}
+			});
+
+		
+		
 	});
 
 }(jQuery));

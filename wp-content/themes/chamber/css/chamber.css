@@ -13,9 +13,6 @@ Colors
 body {
 	font-family: open-sans, sans-serif;
 }
-.container {
-	overflow: hidden;
-}
 .row {
 	overflow: hidden;
 }
@@ -93,6 +90,99 @@ body {
 	bottom: 0px;
 	font-size: 17px;
 }
+.navbar-static-top {
+	border-bottom: none;
+}
+	/* top-level */
+.navbar-default .navbar-nav>a {
+	color: #939598;	
+}
+.navbar-default .navbar-nav .open a:focus {
+	background-color: transparent;
+	color: #f9891a;
+}
+.navbar-default .navbar-nav>.active>a{
+	color: #f9891a;
+	background-color: transparent;
+} 
+.navbar-default .navbar-nav>.active>a:hover{
+	color: #333;
+	background-color: transparent;
+} 
+	/* second level */
+
+.navbar-default .navbar-nav li > ul.dropdown-menu {
+	border-top: none;
+	padding: 0px;
+}
+.navbar-default .navbar-nav li > ul.dropdown-menu li {
+	text-align: center;
+}
+.navbar-default .navbar-nav li > ul.dropdown-menu li a {
+	color: #939598;
+	font-size: 17px;
+	padding: 10px 40px 8px 40px;
+}
+.navbar-default .navbar-nav li > ul.dropdown-menu li.active a {
+	color: #f9891a;
+}
+.navbar-default .navbar-nav li > ul.dropdown-menu li.active a:focus {
+	
+}
+.navbar-default .navbar-nav li > ul.dropdown-menu li a:hover {
+	color: #f9891a;
+	background-color: rgba(255,255,255,0.9);
+}
+
+/* Navbar.Scrolled */
+.navbar-default.scrolled {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 80px;
+	transition: height linear 0.2s;
+	-webkit-transition: height linear 0.2s;
+}
+		/* WP Admin-bar Adjustment */
+.admin-bar .navbar-default.scrolled {
+	top: 32px;
+}
+		/* ----------------------- */
+	
+	/* Scrolled Logo */
+.navbar-default.scrolled .navbar-header .navbar-brand {
+	max-height: 60px;
+	height: 60px;
+	transition: height linear 0.2s;
+	-webkit-transition: height linear 0.2s;
+}
+.navbar-default .navbar-header .navbar-brand img {
+	height: 72px;
+}
+.navbar-default.scrolled .navbar-header .navbar-brand img {
+	height: 60px;
+	transition: height linear 0.2s;
+	-webkit-transition: height linear 0.2s;
+	position: absolute;
+	top: 10px;
+}
+	/* Scrolled Top-Nav */
+.navbar-default.scrolled .navbar-collapse .top-nav {
+	display: none;
+}
+	/* Scrolled Main-nav */
+.navbar-default.scrolled .navbar-collapse .navbar-nav {
+	position: absolute;
+	top: 18px;
+	right: 0px;
+}
+	/* Scrolled dropdown menus */
+.navbar-default.scrolled ul#menu-main-nav li>ul.dropdown-menu {
+	margin-top: 12px;
+	transition: margin linear 0.2s;
+	-webkit-transition: margin linear 0.2s;
+}
+
 
 /* Hero Image */
 section.hero {
@@ -102,6 +192,7 @@ section.hero {
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	z-index: 0;
 }
 section.hero .advancing {
 	background-image: url(../img/circle-futures.png);
@@ -120,6 +211,23 @@ section.theme {
 }
 section.theme .row .col-xs-4 {
 	text-align: center;
+}
+section.theme .col-xs-4 a {
+	opacity: 1.0;
+	height: auto;
+	width: auto;
+}
+section.theme .col-xs-4 a:hover {
+	opacity: 0.6;
+	transition: opacity linear 0.2s;
+	text-decoration: none;
+}
+section.theme .col-xs-4 a > p {
+	opacity: 1.0;
+}
+section.theme .col-xs-4 a:hover > p  {
+	opacity: 0.6;
+	transition: opacity linear 0.2s;
 }
 section.theme .row .col-xs-4 img {
 	min-height: 110px;
@@ -212,7 +320,7 @@ section.news .orange4 ul li {
 	display: inline-block;
 	height: 60px;
 	width: 90%;
-	padding-top: 15px;
+	padding-top: 8px;
 	border-bottom: 1px solid #939598;
 }
 section.news .orange4 ul li a {
@@ -235,6 +343,7 @@ section.news .orange4 ul li p {
 	line-height: 1.4;
 	width: 80%;
 	padding-left: 14px;
+	margin-bottom: 8px;
 }
 	
 
@@ -325,6 +434,14 @@ section.sponsors .col-sm-4 {
 	opacity: 0.6;
 	transition: opacity linear 0.2s;
 	text-decoration: none;
+}
+
+.sidebars .col-xs-12 a > p {
+	opacity: 1.0;
+}
+.sidebars .col-xs-12 a:hover > p  {
+	opacity: 0.6;
+	transition: opacity linear 0.2s;
 }
 .sidebars .col-xs-12.join {
 	padding-top: 40px;
