@@ -31,6 +31,21 @@ body {
 	position: relative;
 	height: 110px!important;
 }
+/* Navbar-Toggle Menu-button */
+.navbar-toggle {
+	background-color: transparent;
+	border: none;
+}
+.navbar-toggle span.icon-bar {
+	height: 6px;
+	width: 36px;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	background-color: transparent;	
+}
+.navbar-default .navbar-toggle:hover > span, .navbar-default .navbar-toggle:focus > span {
+	background-color: #f9891a;
+}
 	/* Top Nav*/
 .navbar-collapse .top-nav {
 	position: absolute;
@@ -478,9 +493,46 @@ section.sponsors .col-sm-4 {
 	
 
 
+@media (min-width: 768px) and (max-width: 993px) {
+   .navbar-collapse.collapse {
+       display: none !important;
+   }
+	.navbar-collapse.collapse.in {
+		display: block !important;
+	}
+	.navbar-toggle {
+		display: block;
+		position: absolute;
+		top: 30px;
+		right: 20px;
+	}
+}
 
-
-
+@media (max-width: 993px) {
+	.top-nav {
+		display: none;
+	}
+	ul.navbar-nav {
+		position: relative;
+		margin: 0px auto;
+		margin-top: 60px;
+		text-align: center;
+		background-color: rgba(255,255,255,0.9);
+	}
+	.navbar-default .container .navbar-collapse.collapse {
+		height: auto;
+		width: 100%;
+	}
+	.collapsing {
+		height: 0px;
+	}
+	ul.navbar-nav li {
+		width: 100%;
+	}
+	
+	
+	
+}
 
 
 
